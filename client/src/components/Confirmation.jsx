@@ -15,7 +15,6 @@ const Confirmation = ({ array, setConfirmation, setList }) => {
       const BASE_DELETE_URL = `https://pt.clubcooee.com/users/rosterchange/${array[i]}/ignore`;
 
       const newTab = window.open(BASE_DELETE_URL, "_blank");
-      newTab.opener.focus();
 
       if (i > array.length) {
         break;
