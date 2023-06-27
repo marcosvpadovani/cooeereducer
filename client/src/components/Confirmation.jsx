@@ -17,15 +17,10 @@ const Confirmation = ({ array, setConfirmation, setList }) => {
       const newTab = window.open(BASE_DELETE_URL, "_blank");
 
       if (i > array.length) {
+        window.location.reload();
         break;
       }
     }
-
-    setIsLoading(false);
-    setNeedFeedback(true);
-    setConfirmation(false);
-    setList([]);
-    window.location.reload();
   };
 
   return (
