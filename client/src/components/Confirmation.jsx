@@ -17,10 +17,12 @@ const Confirmation = ({ array, setConfirmation, setList }) => {
       const BASE_DELETE_URL = `https://pt.clubcooee.com/users/rosterchange/${array[count]}/ignore`;
       window.open(BASE_DELETE_URL, "_blank");
       count++;
-    }
 
-    setIsLoading(false);
-    window.location.reload();
+      if (count > array.length) {
+        window.location.reload();
+        break;
+      }
+    }
   };
 
   return (
