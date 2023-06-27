@@ -11,10 +11,12 @@ const Confirmation = ({ array, setConfirmation, setList }) => {
 
   const handleDeletion = async (e) => {
     setIsLoading(true);
-    for (let i = 0; i < array.length; i++) {
-      const BASE_DELETE_URL = `https://pt.clubcooee.com/users/rosterchange/${array[i]}/ignore`;
+    let count = 0;
 
-      const newTab = window.open(BASE_DELETE_URL, "_blank");
+    while (count < array.length) {
+      const BASE_DELETE_URL = `https://pt.clubcooee.com/users/rosterchange/${array[count]}/ignore`;
+      window.open(BASE_DELETE_URL, "_blank");
+      count++;
     }
 
     setIsLoading(false);
