@@ -13,6 +13,7 @@ const Tips = () => {
           "Lembre-me"; <br />
           Você deve configurar a sua privacidade para que todos possam
           visualizar sua lista de amigos durante todo o processo; <br />
+          Configurar o navegador para permitir "PopUps".
         </p>
       </div>
     </div>

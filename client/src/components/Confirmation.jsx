@@ -19,10 +19,11 @@ const Confirmation = ({ array, setConfirmation, setList }) => {
       count++;
 
       if (count > array.length) {
-        window.location.reload();
         break;
       }
     }
+
+    return window.location.reload();
   };
 
   return (
