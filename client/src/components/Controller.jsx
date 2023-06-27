@@ -62,7 +62,7 @@ const Controller = () => {
               TOTAL DE AMIGOS:
             </label>
             <input
-              type="number"
+              type="text"
               name="total_friend"
               id="total_friend"
               className="w-full rounded-lg bg-zinc-200 p-2 text-zinc-800 text-lg outline-none border border-zinc-400"
