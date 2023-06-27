@@ -19,7 +19,7 @@ const Controller = () => {
   const [nickname, setNickname] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const URL = `http://localhost:8080/get_friends_name/${totalFriends}/${nickname}`;
+  const URL = `https://cooeereducer.onrender.com/get_friends_name/${totalFriends}/${nickname}`;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
