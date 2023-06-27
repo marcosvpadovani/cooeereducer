@@ -69,17 +69,7 @@ const Controller = () => {
               required
               placeholder="Total de amigos da sua lista"
               value={totalFriends}
-              onChange={(e) => {
-                if (
-                  typeof e.target.value !== "string" ||
-                  parseInt(e.target.value) !== Number
-                ) {
-                  setTotalFriends("");
-                  return;
-                }
-
-                setTotalFriends(e.target.value);
-              }}
+              onChange={(e) => setTotalFriends(e.target.value)}
             />
           </div>
           <div className="w-full flex items-center justify-center flex-col mb-2">
